@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elite.blog.PostActivity">
+
+    <ImageButton
+        android:id="@+id/ib_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_btn" />
+
+    <EditText
+        android:id="@+id/et_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ib_post"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Post title ..."
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_post_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_post_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Post description ..."
+        android:inputType="textMultiLine"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit post"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/pb_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+</android.widget.RelativeLayout>

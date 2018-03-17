@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context="com.elite.mychat.ChatActivity">
+
+    <include
+        android:id="@+id/chat_page_toolbar"
+        layout="@layout/my_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/et_chat_typing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_page_toolbar"
+        app:stackFromEnd="false" />
+
+    <ImageButton
+        android:id="@+id/ib_chat_add"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/et_chat_typing"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_chat_typing"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/ib_chat_send"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/et_chat_typing"
+        app:layout_constraintTop_toTopOf="@+id/et_chat_typing"
+        app:srcCompat="@drawable/ic_send_black_24dp" />
+
+    <EditText
+        android:id="@+id/et_chat_typing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Type message ..."
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib_chat_send"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toEndOf="@+id/ib_chat_add" />
+
+</android.support.constraint.ConstraintLayout>

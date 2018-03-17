@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "293686866885",
+    "firebase_url": "https://elite-cad04.firebaseio.com",
+    "project_id": "elite-cad04",
+    "storage_bucket": "elite-cad04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293686866885:android:29a9de4736db013a",
+        "android_client_info": {
+          "package_name": "com.elite.blog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293686866885-mspq1q18jmdru4fj3sechirmu4pgbga8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elite.blog",
+            "certificate_hash": "2c8984b8994e5dd401db6175dd79b84ecafa3213"
+          }
+        },
+        {
+          "client_id": "293686866885-4u9jd6dvk3eq9go6pfsg1r2tj12uurnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbQd4xkFFI-_56IRX47YiOwtHPg5-qiZs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293686866885-4u9jd6dvk3eq9go6pfsg1r2tj12uurnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

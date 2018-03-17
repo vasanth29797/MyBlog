@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elite.blog.SignupActivity"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et_signup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Your name ..."
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/et_signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_signup_name"
+        android:layout_marginTop="24dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email ..."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_signup_pwd"
+        android:layout_below="@+id/et_signup_email"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPassword"
+        android:hint="Password ..."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signup"
+        android:layout_below="@+id/et_signup_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sign up"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+</android.widget.RelativeLayout>

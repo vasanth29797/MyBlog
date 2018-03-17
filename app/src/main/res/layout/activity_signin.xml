@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elite.blog.SigninActivity"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_signin_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="24dp"
+        android:hint="Email ..."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_signin_pwd"
+        android:inputType="textPassword"
+        android:layout_marginTop="24dp"
+        android:hint="Password ..."
+        android:layout_below="@+id/et_signin_email"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signin"
+        android:layout_marginTop="40dp"
+        android:text="Sign In"
+        android:layout_below="@+id/et_signin_pwd"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signin_new"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Create a new account"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_signin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_signin"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signin_google"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_signin_new"
+        android:layout_marginBottom="16dp"/>
+
+</android.widget.RelativeLayout>
